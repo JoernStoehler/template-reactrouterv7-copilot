@@ -1,17 +1,21 @@
-# Welcome to React Router!
+# React Router v7 Template
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, production-ready template for building full-stack React applications using React Router v7 with development tools optimized for fast development.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
+- 🚀 Server-side rendering with React Router v7
+- ⚡️ Hot Module Replacement (HMR) for fast development
+- 📦 Asset bundling and optimization with Vite
 - 🔄 Data loading and mutations
-- 🔒 TypeScript by default
+- 🔒 TypeScript by default with strict type checking
 - 🎉 TailwindCSS for styling
+- 🧹 ESLint and Prettier for code quality
+- 🪝 Pre-commit hooks for typechecking, linting and formatting
+- 📋 EditorConfig for consistent code style
+- 🌐 Environment variables management (.env) for server-side API keys
 - 📖 [React Router docs](https://reactrouter.com/)
 
 ## Getting Started
@@ -42,27 +46,51 @@ Create a production build:
 npm run build
 ```
 
+## Development Tools
+
+### Linting & Formatting
+
+- Run ESLint:
+
+  ```bash
+  npm run lint
+  ```
+
+- Fix ESLint issues:
+
+  ```bash
+  npm run lint:fix
+  ```
+
+- Format code:
+  ```bash
+  npm run format
+  ```
+
+### Pre-commit Hooks
+
+The project uses Husky and lint-staged to enforce:
+
+- Type checking
+- Linting
+- Code formatting
+
+These checks run automatically when you commit changes.
+
+## Environment Variables
+
+Server-side API keys and sensitive data should be stored in `.env` file:
+
+1. Copy `.env.example` to `.env`
+2. Update values in `.env` with your actual credentials
+
+**Note**: The `.env` file is git-ignored and should NEVER be committed.
+
 ## Deployment
 
-### Docker Deployment
+### Manual Deployment
 
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+This template is designed for manual deployment workflows.
 
 ### DIY Deployment
 
