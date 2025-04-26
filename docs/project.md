@@ -1,104 +1,48 @@
-# Project Structure and Tooling
+# Project Structure
 
-This document provides a simple overview of the project structure, development workflow, and tooling for developers using this template.
-
-## Project Structure
-
-This template follows a clean, standard TypeScript project layout:
+## Key Directories
 
 ```
-typescript-backend-template/
-├── data/                # Data storage directory
-│   ├── raw/             # Raw data files
-│   ├── processed/       # Processed data files
-│   └── saved/           # Output data files
-├── docs/                # Documentation
-│   ├── index.md         # Documentation index
-│   ├── codestyle.md     # Coding standards
-│   └── ...              # Other documentation
-├── .github/             # GitHub-specific files
-│   └── copilot-instructions.md # Copilot instructions
-├── src/                 # Source code
-│   ├── main.ts          # Main module
-│   ├── cli.ts           # CLI interface
-│   ├── utils.ts         # Utility functions
-│   └── scripts/         # Runnable scripts
-│       └── process-data.ts
-├── test/                # Test directory
-│   ├── main.spec.ts     # Tests for main module
-│   └── utils.spec.ts    # Tests for utils module
-└── dist/                # Compiled output (generated)
+app/                # React Router v7 application source
+  routes/           # Route components
+  server/           # Server-side code
+  welcome/          # Welcome components
+public/             # Static assets
+.react-router/      # Generated files (not committed)
 ```
 
-## Development Environment
+## Key Files
 
-This project uses npm for dependency management and packaging.
+- `app/root.tsx` - Root layout with browser APIs
+- `app/routes.ts` - Route definitions
+- `react-router.config.ts` - React Router v7 configuration
 
-### Setting Up
+## Development Commands
 
-1. Install Node.js and npm (if not already installed):
+```bash
+npm run dev        # Start dev server with HMR (http://localhost:5173)
+npm run build      # Build for production
+npm run lint       # Run ESLint
+npm run format     # Run Prettier
+npm run typecheck  # Run TypeScript checks
+```
 
-   ```bash
-   # Using nvm (recommended)
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-   nvm install node
-
-   # Or directly from package manager
-   # For Ubuntu/Debian
-   # sudo apt install nodejs npm
-   ```
-
-2. Install dependencies (this will also automatically set up Husky pre-commit hooks via the prepare script):
-
-   ```bash
-   npm install
-   ```
-
-## Development Workflow
-
-### Code Quality
-
-- **Formatting code**:
-
+- **Start the production server**:
   ```bash
-  npm run format
+  npm run start
   ```
 
-- **Linting code**:
+### Development Features
 
-  ```bash
-  npm run lint
-  ```
+This React Router v7 template comes with several key features:
 
-- **Running tests**:
-
-  ```bash
-  npm test
-  ```
-
-- **Running tests with coverage**:
-
-  ```bash
-  npm run test:cov
-  ```
-
-- **Running the development server**:
-  ```bash
-  npm run dev
-  ```
-
-### Building and Running
-
-- **Build the project**:
-
-  ```bash
-  npm run build
-  ```
-
-- **Run the compiled application**:
-  ```bash
-  npm start
-  ```
+1. **Server-Side Rendering (SSR)** - Pre-renders pages on the server for better performance and SEO
+2. **Hot Module Replacement (HMR)** - Fast development with instant UI updates without page reloads
+3. **TypeScript Integration** - Full type safety with strict mode enabled
+4. **TailwindCSS** - Utility-first CSS framework for rapid UI development
+5. **Environment Variable Support** - Easy configuration with dotenv for server-side environment variables
+6. **Pre-commit Hooks** - Enforces code quality via Husky and lint-staged
+7. **Modern ESLint Configuration** - Uses ESLint flat config for maintainable linting rules
 
 ### Cleaning
 

@@ -1,12 +1,19 @@
-# Project Documentation Index
+# React Router v7 Template
 
-A quick reference to all available documentation files:
+## Quick Links
 
-- [README.md](../README.md) - Project overview and quick start guide.
-- [project.md](project.md) - Development workflow, tools, and project structure.
-- [project_tooling.md](project_tooling.md) - Overview of TypeScript devtools and libraries.
-- [commit.md](commit.md) - Guidelines for making effective small commits.
-- [pullrequest.md](pullrequest.md) - Process for submitting and reviewing larger changes.
-- [codestyle.md](codestyle.md) - TypeScript coding standards and conventions.
-- [changelog.md](changelog.md) - Record of all notable changes to the project.
-- [roadmap.md](roadmap.md) - Future development plans organized by phases.
+- [Project Structure](project.md) - Directory structure and commands
+- [Project Tooling](project_tooling.md) - Key technologies and config files
+- [Code Style](codestyle.md) - Project-specific conventions
+- [Commit Guidelines](commit.md) - Commit format and checks
+- [Pull Requests](pullrequest.md) - PR process
+- [Changelog](changelog.md) - Recent changes
+- [Roadmap](roadmap.md) - Upcoming features
+
+## Key Features
+
+- React Router v7 with SSR and data APIs
+- Vite + HMR for fast development
+- TailwindCSS for styling
+- TypeScript with strict mode
+- ESLint flat config

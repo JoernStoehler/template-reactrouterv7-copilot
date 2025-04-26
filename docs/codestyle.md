@@ -1,28 +1,19 @@
 # Code Style Guide
 
-## TypeScript Style
+## Project-Specific Conventions
 
-We use ESLint and Prettier with the following key conventions:
+- File names: `kebab-case.tsx` for components, `kebab-case.ts` for utilities
+- Route components go in `app/routes/` directory
+- Use React Router v7 type system for loaders and actions
+- Include explicit return types on loader/action functions
 
-### Formatting & Naming
+## React Patterns
 
-- Line length: 100 chars, 2 spaces indent, single quotes, semicolons
-- `camelCase` for functions/variables, `PascalCase` for types, `UPPER_CASE` for constants
+- Extract business logic from route components
+- Use `react-router` hooks for routing (`useLoaderData`, `useActionData`, etc.)
 
-### Guidelines
+## Styling
 
-- Group imports: Node.js modules → external packages → internal imports
-- Use interfaces for extensible objects, type aliases for complex types
-- Include explicit return types on public API functions
-- Use JSDoc for all public functions with @param, @returns, @throws
-- Comments should explain "why" not "what"
-- Use `unknown` instead of `any` for unknown types
-
-## Testing & Best Practices
-
-- Use Vitest describe/it blocks with descriptive names
-- Test both success paths and edge cases
-- Validate inputs early and provide clear error messages
-- Follow standard REST API conventions for endpoints
-- One class or related function set per file
-- Use barrel exports (index.ts) for public APIs
+- Use TailwindCSS exclusively - avoid custom CSS files
+- Global styles in `app.css` should be minimal
+- Follow mobile-first responsive approach
