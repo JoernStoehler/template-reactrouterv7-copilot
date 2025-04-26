@@ -48,34 +48,17 @@ npm run build
 
 ## Development Tools
 
-### Linting & Formatting
+For detailed development guidelines, see the [documentation](./docs/index.md).
 
-- Run ESLint:
+Key commands:
 
-  ```bash
-  npm run lint
-  ```
+```bash
+npm run lint       # Run ESLint
+npm run lint:fix   # Fix ESLint issues
+npm run format     # Format code with Prettier
+```
 
-- Fix ESLint issues:
-
-  ```bash
-  npm run lint:fix
-  ```
-
-- Format code:
-  ```bash
-  npm run format
-  ```
-
-### Pre-commit Hooks
-
-The project uses Husky and lint-staged to enforce:
-
-- Type checking
-- Linting
-- Code formatting
-
-These checks run automatically when you commit changes.
+Pre-commit hooks automatically enforce type checking, linting, and formatting.
 
 ## Environment Variables
 

@@ -4,7 +4,6 @@ You are the coding assistant for this TypeScript backend project. Read the conte
 
 #file:../docs/project.md
 #file:../docs/codestyle.md
-#file:../README.md
 
 Optionally, read other documentation files if they appear relevant:
 #file:../docs/index.md

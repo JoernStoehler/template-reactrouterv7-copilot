@@ -1,19 +1,18 @@
-# React Router v7 Template
+# React Router v7 Project Documentation
 
-## Quick Links
+This documentation is intended for senior developers who are joining the project and need to quickly understand our specific setup and conventions.
 
-- [Project Structure](project.md) - Directory structure and commands
-- [Project Tooling](project_tooling.md) - Key technologies and config files
-- [Code Style](codestyle.md) - Project-specific conventions
-- [Commit Guidelines](commit.md) - Commit format and checks
-- [Pull Requests](pullrequest.md) - PR process
+## Quick Reference
+
+- [Project Structure](project.md) - Architecture, key files, and commands
+- [Code Style](codestyle.md) - Project conventions and patterns
+- [Workflow](workflow.md) - Commit and PR guidelines
 - [Changelog](changelog.md) - Recent changes
 - [Roadmap](roadmap.md) - Upcoming features
 
-## Key Features
+## Tech Stack Overview
 
-- React Router v7 with SSR and data APIs
-- Vite + HMR for fast development
-- TailwindCSS for styling
-- TypeScript with strict mode
-- ESLint flat config
+- React Router v7 (SSR, data APIs)
+- TypeScript (strict mode)
+- TailwindCSS (utility-first styling)
+- Vitest (testing)
