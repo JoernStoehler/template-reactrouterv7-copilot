@@ -1,6 +1,5 @@
 /// <reference types="vitest" />
 
-import { reactRouter } from '@react-router/dev/vite';
 import tailwindcss from '@tailwindcss/vite';
 import dotenv from 'dotenv';
 import { defineConfig } from 'vite';
@@ -10,13 +9,9 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 dotenv.config();
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    !process.env.VITEST && !process.env.STORYBOOK && reactRouter(),
-    tsconfigPaths(),
-  ].filter(Boolean),
+  plugins: [tailwindcss(), tsconfigPaths()],
   server: {
-    port: parseInt(process.env.SERVER_PORT || '5173', 10),
+    port: parseInt(process.env.SERVER_PORT || '6006', 10),
     host: process.env.HOST || 'localhost',
   },
   test: {

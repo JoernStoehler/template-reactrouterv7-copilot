@@ -31,3 +31,5 @@ yarn-error.log*
 # Misc
 .tmp
 .temp
+
+*storybook.log

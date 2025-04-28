@@ -11,6 +11,7 @@ A modern, production-ready template for building full-stack React applications u
 - 📦 Asset bundling and optimization with Vite
 - 🔄 Data loading and mutations
 - 🔒 TypeScript by default with strict type checking
+- 📚 Storybook 8.x for component development and documentation
 - 🎉 TailwindCSS for styling
 - 🧹 ESLint and Prettier for code quality
 - 🪝 Pre-commit hooks for typechecking, linting and formatting
@@ -53,9 +54,11 @@ For detailed development guidelines, see the [documentation](./docs/index.md).
 Key commands:
 
 ```bash
-npm run lint       # Run ESLint
-npm run lint:fix   # Fix ESLint issues
-npm run format     # Format code with Prettier
+npm run lint         # Run ESLint
+npm run lint:fix     # Fix ESLint issues
+npm run format       # Format code with Prettier
+npm run storybook    # Start Storybook for component development
+npm run build-storybook # Build Storybook as static site
 ```
 
 Pre-commit hooks automatically enforce type checking, linting, and formatting.

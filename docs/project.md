@@ -18,17 +18,20 @@ app/                # Application source
 - `eslint.config.js` - ESLint flat config with React/TS rules
 - `tailwind.config.js` - Styling customization
 - `.env` - Environment variables (copy from .env.example)
+- `.storybook/` - Storybook configuration for component development
 
 ## Commands
 
 Development:
 
 ```bash
-npm run dev        # HMR dev server (http://localhost:5173)
-npm run test       # Run tests (--watch or --coverage flags available)
-npm run lint       # Run ESLint (lint:fix to auto-fix issues)
-npm run format     # Run Prettier formatting
-npm run typecheck  # TypeScript check
+npm run dev             # HMR dev server (http://localhost:5173)
+npm run test            # Run tests (--watch or --coverage flags available)
+npm run lint            # Run ESLint (lint:fix to auto-fix issues)
+npm run format          # Run Prettier formatting
+npm run typecheck       # TypeScript check
+npm run storybook       # Start Storybook dev server (http://localhost:6006)
+npm run build-storybook # Build Storybook as static site
 ```
 
 ## Testing & Quality Checks

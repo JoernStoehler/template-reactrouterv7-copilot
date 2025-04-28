@@ -5,6 +5,7 @@
 - File naming: `kebab-case.tsx` for components, `kebab-case.ts` for utilities
 - Route components must be placed in `app/routes/` directory
 - Test files are colocated with implementation: `file.ts` and `file.test.ts`
+- Storybook stories are colocated with components: `file.tsx` and `file.stories.tsx`
 
 ## React & Routing Conventions
 
@@ -30,3 +31,21 @@
   ```
 - Mock external resources (SVG, API calls) in tests
 - Prefer RTL's role-based selectors (getByRole) over element selectors
+
+## Storybook Guidelines
+
+- Colocated `.stories.tsx` files alongside components
+- Title format: `'[Category]/[ComponentName]'` (e.g., "Routes/Home")
+- For route components:
+  ```typescript
+  parameters: {
+    reactRouter: reactRouterParameters({
+      routing: { path: '/path' },
+      // Optional: Add path params if needed
+      location: { pathParams: { id: '123' } },
+    });
+  }
+  ```
+- Configuration:
+  - React Router plugin disabled in Storybook via `STORYBOOK=true` environment variable
+  - See `.storybook/main.ts` and `vite.config.ts` for implementation details

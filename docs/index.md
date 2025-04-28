@@ -16,3 +16,4 @@ This documentation is intended for senior developers who are joining the project
 - TypeScript (strict mode)
 - TailwindCSS (utility-first styling)
 - Vitest (testing)
+- Storybook 8.x (component development and documentation)
